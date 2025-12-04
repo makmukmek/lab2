@@ -73,13 +73,13 @@ class ConsoleGeometryCalculator:
         
         # Получение параметров фигуры
         parameters = {}
-        if shape_info['name'] == "Параллелепипед":
-            print("\nВведите размеры параллелепипеда:")
-            length = self.get_float_input("Длина (м): ")
-            width = self.get_float_input("Ширина (м): ")
-            height = self.get_float_input("Высота (м): ")
-            shape = shape_info['class'](length, width, height)
-            parameters = {'length': length, 'width': width, 'height': height}
+        # if shape_info['name'] == "Параллелепипед":
+        #     print("\nВведите размеры параллелепипеда:")
+        #     length = self.get_float_input("Длина (м): ")
+        #     width = self.get_float_input("Ширина (м): ")
+        #     height = self.get_float_input("Высота (м): ")
+        #     shape = shape_info['class'](length, width, height)
+        #     parameters = {'length': length, 'width': width, 'height': height}
             
         elif shape_info['name'] == "Тетраэдр":
             print("\nВведите размеры тетраэдра:")
