@@ -69,10 +69,10 @@ class GeometryDatabase:
         conn.commit()
         conn.close()
     
-    def get_all_calculations(self) -> List[Dict[str, Any]]:
-        """Получение всех расчетов из базы данных"""
-        conn = sqlite3.connect(self.db_path)
-        cursor = conn.cursor()
+    # def get_all_calculations(self) -> List[Dict[str, Any]]:
+    #     """Получение всех расчетов из базы данных"""
+    #     conn = sqlite3.connect(self.db_path)
+    #     cursor = conn.cursor()
         
         cursor.execute('''
             SELECT * FROM calculations ORDER BY created_at DESC
