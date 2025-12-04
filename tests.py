@@ -11,12 +11,12 @@ from geometry_package import Parallelepiped, Tetrahedron, Sphere, Steel, Aluminu
 class TestShapeBasicProperties:
     """Тесты базовых свойств фигур"""
     
-    # def test_parallelepiped_creation(self):
-    #     """Тест создания параллелепипеда"""
-    #     p = Parallelepiped(2.0, 3.0, 4.0)
-    #     assert p.length == 2.0
-    #     assert p.width == 3.0
-    #     assert p.height == 4.0
+    def test_parallelepiped_creation(self):
+        """Тест создания параллелепипеда"""
+        p = Parallelepiped(2.0, 3.0, 4.0)
+        assert p.length == 2.0
+        assert p.width == 3.0
+        assert p.height == 4.0
     
     def test_tetrahedron_creation(self):
         """Тест создания тетраэдра"""
