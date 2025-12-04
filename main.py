@@ -59,12 +59,12 @@ class ConsoleGeometryCalculator:
             except ValueError:
                 print("Пожалуйста, введите корректное число!")
     
-    # def select_shape(self):
-    #     """Выбор фигуры"""
-    #     self.clear_screen()
-    #     self.display_header()
-    #     print("ВЫБОР ФИГУРЫ")
-    #     print("-" * 30)
+    def select_shape(self):
+        """Выбор фигуры"""
+        self.clear_screen()
+        self.display_header()
+        print("ВЫБОР ФИГУРЫ")
+        print("-" * 30)
         
         choice = self.get_user_choice(self.shapes, "Доступные фигуры:")
         shape_info = self.shapes[choice]
