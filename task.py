@@ -1,11 +1,11 @@
-def fast_multiply(m, n):
-    result = 0
-    while n > 0:
-        if n & 1:
-            result += m
-        m <<= 1
-        n >>= 1
-    return result
+# def fast_multiply(m, n):
+#     result = 0
+#     while n > 0:
+#         if n & 1:
+#             result += m
+#         m <<= 1
+#         n >>= 1
+#     return result
 
 def fast_square(m):
     if m == 0:
